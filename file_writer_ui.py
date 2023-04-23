@@ -18,3 +18,17 @@ layout_add_text = [
     [sg.Button('Add Text'), sg.Button('Quit')]
 ]
 
+window.layout(layout_choose_file)
+
+while True:
+    event, values = window.read()
+
+    if(event == sg.WIN_CLOSED or event == 'Quit'):
+        break
+
+    if(event == 'Choose File'):
+        window.close()
+        window = sg.Window(TITLE)
+        window.layout(layout_add_text)
+
+window.close()
