@@ -12,8 +12,8 @@ If the user has no more sentences to add, the program terminates.
 '''
 
 # Ask the user for the filename. If no parameters given, filename will default to mylife.txt
-def file_writer(text, filename='mylife.txt'):
-
+def file_writer(text, filename):
+    filename = 'mylife.txt' if filename == '' else filename
     with open(filename, 'a') as file_to_write:
         # Ask the user for input, and then append that input to the file.
         file_to_write.write(f'{text}\n')
