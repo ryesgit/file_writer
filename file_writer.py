@@ -10,3 +10,9 @@ If the user has no more sentences to add, the program terminates.
 2. Ask the user for input, and then append that input to the file.
 
 '''
+
+# Ask the user for the filename. If no parameters given, filename will default to mylife.txt
+def file_writer(filename='myfile.txt'):
+
+    with open(filename, 'a') as file_to_write:
+        pass
