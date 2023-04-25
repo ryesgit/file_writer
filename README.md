@@ -14,5 +14,5 @@ If the user has no more sentences to add, the program terminates.
 git clone https://github.com/ryesgit/odd_and_even_extractor
 cd ./odd_and_even_extractor
 pip install -r requirements.txt
-python extractor_ui.py
+python file_writer_ui.py
 ```
